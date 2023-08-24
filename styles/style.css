@@ -71,7 +71,7 @@ Video {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 200px;
   width: 600px;
   margin: 40px auto;
 }
@@ -103,7 +103,7 @@ Audio {
   background-color: #f1f1f1;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Didot', serif;
   text-align: center;
 }
@@ -176,6 +176,13 @@ p {
   video {
     width: 90%;
     height: 10%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  audio {
+    width: 90%;
     padding: 10px;
   }
 }
