@@ -73,43 +73,56 @@ Video {
   overflow: hidden;
   height: 400px;
   width: 600px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
+
+Audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  margin: 60px auto;
+}
+
 .video-container {
   display: flex;
-  justify-content: center; /* Mengatur posisi kotak di tengah */
+  justify-content: center;
   align-items: center;
-  height: 100%; /* Menjadikan kotak dengan tinggi sebesar tampilan layar */
-  margin: 40px;
+  height: 65vh; /* Menggunakan tinggi viewport untuk kotak di tengah layar */;
+  padding: 10px;
 }
 
 .video-box {
   display: flex;
-  flex-direction: row; /* Mengatur teks judul dan keterangan di sebelah kiri */
-  align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Mengatur teks di tengah vertikal */
+  align-items: center; /* Mengatur teks di tengah horizontal */
   width: 600px;
-  height: 300px;
   background-color: #f1f1f1;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding-left: 20px; /* Memberikan padding kiri pada kotak */
+  padding: 20px;
+  font-family: 'Didot', serif;
+  text-align: center;
 }
 
 .video-box h5 {
-  margin: 10px; /* Menghapus margin pada teks judul */
+  margin: 10px 0;
   font-size: 18px;
   font-weight: bold;
 }
 
 .video-box p {
-  margin: 0; /* Menghapus margin pada teks keterangan */
-  font-size: 16px;
+  margin: 0;
+  font-size: 17px;
   color: #666;
   text-align: justify;
-  padding: 10px;
-  font-family: 'Didot', serif;
   line-height: 1.5;
 }
+
+
 
 .header {
   font-family: 'Perpetua', serif;
@@ -150,7 +163,7 @@ p {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 896px) {
   p {
     font-size: 12px;
     padding: 10px;
@@ -167,7 +180,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 896px) {
   .header {
     font-size: 25px;
     margin-left: 5px;
@@ -175,7 +188,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 896px) {
   h3 {
     font-size: 22px;
     line-height: 1.2;
@@ -206,13 +219,14 @@ p {
     height: auto;
     width: 90%;
   }
-  video {
+  .video-box p{
     max-width: 100%;
     height: auto;
-  }
+    font-size: 15px;
+
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 896px) {
   footer {
     font-size: 16px;
     margin: 20px;

@@ -9,19 +9,14 @@ function showSlide() {
 }
 
 function nextSlide() {
-  currentSlideIndex++
-  if (currentSlideIndex >= slides.length) {
-    currentSlideIndex = 0
-  }
-  showSlide()
+  currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+  showSlide();
 }
 
 function prevSlide() {
-  currentSlideIndex--
-  if (currentSlideIndex < 0) {
-    currentSlideIndex = slides.length - 1
-  }
-  showSlide()
+  currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+  showSlide();
 }
+
 
 showSlide()
